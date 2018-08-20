@@ -1,0 +1,91 @@
+$color:#005ce6;
+
+%message {
+    text-align: justify;
+    padding: 20px;
+}
+
+.header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;  
+}
+.menu {
+    text-align: center;
+}
+
+.btn-group-justified {
+    margin-bottom: 30px;
+}
+
+#alphabet {
+   text-align: center;
+   margin: 20px;
+}
+
+div {
+    h4 {
+        margin: 20px;
+        color: $color;
+    }
+    p {
+        text-align: justify;
+    }
+}
+a:hover {
+    background-color: #ffff4d;
+}
+
+.container_facts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_facts > div {
+    @extend %message;
+    background-color: #ffff66;
+    width: 300px;
+    margin: 20px;
+}
+.img-responsive {   
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.row > div {
+    @extend %message;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px;
+}
+.col1 {
+    color: $color;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: justify;
+}
+@media (max-width: 499px) {
+    #alphabet {
+        visibility: hidden
+    }
+}
+.container_facts div:hover {
+    background-color: #ffff33;
+}
+.f2, .f3, .f5, .f6, .f8 {
+    display: none;
+}
+
+#fact2:hover .f2, #fact3:hover .f3, #fact5:hover .f5, #fact6:hover .f6, #fact8:hover .f8 {
+  display: block;
+}
+
